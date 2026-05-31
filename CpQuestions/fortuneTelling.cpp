@@ -16,25 +16,33 @@ void solve(){
             f = (!f);
         }
     }
-    // if we start with odd numbers we end at the number same as parity of  f
-    if(x&1){
-        if((f ^ y) & 1){
-            cout << "Alice" << endl;
-        }
-        else{
-            cout << "Bob" << endl;
-        }
+    ll sum = accumulate(v.begin(), v.end(), 0LL);
+    if(sum + x + y % 2 == 0){
+        cout << "Alice" << endl;
     }
     else{
-        f = (!f);
-        if((f ^ y) & 1){
-            cout << "Alice" << endl;
-        }
-        else{
-            cout << "Bob" << endl;
-        }
+        cout << "Bob" << endl;
     }
+//     // if we start with odd numbers we end at the number same as parity of  f
+//     if(x&1){
+//         if(!((f ^ y) & 1)){
+//             cout << "Alice" << endl;
+//         }
+//         else{
+//             cout << "Bob" << endl;
+//         }
+//     }
+//     else{
+//         if(!((f ^ y) & 1)){
+//             cout << "Bob" << endl;
+//         }
+//         else{
+//             cout << "Alice" << endl;
+//         }
+//     }
 }
+
+
 
 int main(){
     ll t;
