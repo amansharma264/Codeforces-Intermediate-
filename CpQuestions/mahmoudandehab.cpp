@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+#define ll long long
+const int mod = 1e9 + 7;
+using namespace std;
+
+
+void solve() {
+    ll n;
+    cin >> n;
+    if(n % 2 == 0){
+        cout << "Mahmoud" << endl;
+    }
+    else{
+        cout << "Ehab" << endl;
+    }
+}
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    solve();
+    // ll t;
+    // cin >> t;
+    // while(t--){
+    //     solve();
+    // }
+
+    return 0;
+}
